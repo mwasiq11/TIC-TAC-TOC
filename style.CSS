@@ -1,0 +1,300 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #1C1D21;
+    font-size: 50px;
+    margin-top: 10px;
+
+}
+
+body {
+    background-color: #496A81;
+    box-shadow: none;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 60vmin;
+    width: 60vmin;
+    margin-left: 500px;
+    margin-top: 40px;
+
+}
+
+.box {
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 55px;
+    color: maroon;
+    background-color:#F8DDA4;
+    
+}
+
+
+#reset-btn{
+   
+    margin-top: 60px;
+    margin-left:670px;
+    height: 50px;
+    width:120px;
+    font-size: 18px;
+    font-weight:600;
+     border-radius: 10px;
+    border: none; 
+
+    color:#1C1D21;   
+}
+
+#msg{
+    font-size:40px;
+    color:#8B6220;
+    margin-left: 650px;
+    font-weight: bold;
+}
+
+#new-Btn{
+    margin-top: 30px;
+    margin-left:670px;
+    height: 50px;
+    width:120px;
+    font-size: 18px;
+    font-weight:600;
+     border-radius: 10px;
+    border: none; 
+
+    color:#1C1D21;   
+}
+
+.msgContainer{
+    height: 30vmin;
+}
+.hide{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+h1 {
+    text-align: center;
+    color: #221d1d;
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); /* you can change the colors based on your preference */
+    font-size: 3vw;
+    /* Scaled based on screen width */
+    margin-top: 28px;
+    border-radius: 25px;
+    border: none;
+}
+
+body {
+    background-color: #496A81;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/bg\ pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    justify-content: center;
+    align-items: center;
+    height: 60vmin;
+    width: 60vmin;
+    margin-top: 5vh;
+    
+    /* Adjusted for responsiveness */
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 6vmin;
+    color: maroon;
+    background-color: #d0f0ff;;
+    box-shadow: 0px 0px 10px rgba(0, 188, 212, 0.5);
+    border: 3px solid #00bcd4;
+}
+
+#reset-btn,
+#new-Btn {
+    margin-top: 4vh;
+    height: 6vh;
+    width: 20vw;
+    font-size: 2.5vmin;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: #1C1D21;
+    max-width: 120px;
+    /* Prevents oversized buttons on larger screens */
+    background-color: rgb(163, 97, 50);
+}
+
+#msg {
+    font-size: 4vmin;
+    color: #c5851e;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.msgContainer {
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 64px
+}
+
+/* Hide class for messages */
+.hide {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .game {
+        width: 80vmin;
+        height: 80vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 6vmin;
+    }
+
+    #reset-btn,
+    #new-Btn {
+        width: 25vw;
+        font-size: 3vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    .game {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 7vmin;
+    }
+
+    #reset-btn,
+    #new-Btn {
+        width: 30vw;
+        font-size: 3.5vmin;
+    }
+}
+
+#new-Btn {
+    margin-top: 1vh;
+    height: 6vh;
+    width: 20vw;
+    min-width: 100px;
+    /* Prevents collapsing */
+    max-width: 150px;
+    /* Keeps it consistent */
+    font-size: 2.5vmin;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: #1C1D21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 6vh;
+    background-color: #c5851e;
+    
+
+
+}
+
+/* Adjust for small screens */
+@media (max-width: 480px) {
+    #new-Btn {
+        width: 35vw;
+        /* Adjusts width for smaller screens */
+        min-width: 120px;
+        /* Ensures it remains visible */
+        font-size: 4vmin;
+        /* Increases font size for better readability */
+    }
+}
+
+
+#credit{
+
+
+margin-right: 70vw;
+margin-top: 40px;
+font-size: 25px;
+color: #1C1D21;
+background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+font-weight: 600;
+border-radius: 10px;
+border: none;
+}
+@media only screen and (max-width:444px){
+#credit{
+
+margin-right: 46vw;
+margin-top: 40px;
+font-size: 14px;
+color: #1C1D21;
+background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+font-weight: 600;
+}
+}
